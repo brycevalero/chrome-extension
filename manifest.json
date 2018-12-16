@@ -1,0 +1,40 @@
+{
+    "name": "Extension name",
+	"description": "Describe in detail what your extension does",
+    "version": "1.0",
+    "manifest_version": 2,
+	
+	"options_page": "html/options.html",
+
+    "browser_action": {
+		"default_icon": {
+			"16": "images/img16.png",
+			"32": "images/img32.png",
+			"48": "images/img48.png",
+			"128": "images/img128.png"
+		},
+		"default_popup": "html/popup.html",
+		"default_title": "Extenstion title!"
+	},
+	
+	"icons": {
+      "16": "images/img16.png",
+      "32": "images/img32.png",
+      "48": "images/img48.png",
+      "128": "images/img128.png"
+    },
+	
+	"permissions": [
+		"bookmarks",
+		"activeTab"
+	],
+   
+	"background": {
+		"scripts": [
+			"js/background.js",
+			"js/popup.js",
+			"js/options.js"
+		],
+		"persistent": true
+	}
+}
